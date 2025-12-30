@@ -10,6 +10,12 @@
             '8xl': '96rem',
             '9xl': '112rem',
           },
+          colors: {
+            background: 'hsl(var(--background))',
+            foreground: 'hsl(var(--foreground))',
+            primary: 'hsl(var(--primary))',
+            border: 'hsl(var(--border))',
+          },
         },
       },
       plugins: [],

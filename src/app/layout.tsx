@@ -1,68 +1,6 @@
-import localFont from "next/font/local";
 import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/components/common/header/Header";
-import Footer from "@/components/common/footer";
+import "../styles/themes.css";
 
-const panchangBold = localFont({
-  src: "../assets/fonts/SFUIDisplay-Bold.woff2",
-  variable: "--font-panchang-bold",
-  display: "swap",
-});
-
-const panchangMedium = localFont({
-  src: "../assets/fonts/SFUIDisplay-Bold.woff2",
-  variable: "--font-panchang-medium",
-  display: "swap",
-});
-
-const panchangRegular = localFont({
-  src: "../assets/fonts/SFUIDisplay-Bold.woff2",
-  variable: "--font-panchang-regular",
-  display: "swap",
-});
-
-const panchangSemiBold = localFont({
-  src: "../assets/fonts/SFUIDisplay-Bold.woff2",
-  variable: "--font-panchang-semibold",
-  display: "swap",
-});
-
-const archivoItalic = localFont({
-  src: "../assets/fonts/SFUIText-Regular.woff2",
-  variable: "--font-Archivo-italic",
-  display: "swap",
-});
-
-const archivoMedium = localFont({
-  src: "../assets/fonts/SFUIText-Regular.woff2",
-  variable: "--font-Archivo-medium",
-  display: "swap",
-});
-
-const archivoRegular = localFont({
-  src: "../assets/fonts/SFUIText-Regular.woff2",
-  variable: "--font-Archivo-regular",
-  display: "swap",
-});
-
-const archivoSemiBold = localFont({
-  src: "../assets/fonts/SFUIText-Regular.woff2",
-  variable: "--font-Archivo-semibold",
-  display: "swap",
-});
-
-const archivoBlack = localFont({
-  src: "../assets/fonts/SFUIText-Regular.woff2",
-  variable: "--font-Archivo-black",
-  display: "swap",
-});
-
-const archivoBlackItalic = localFont({
-  src: "../assets/fonts/SFUIText-Regular.woff2",
-  variable: "--font-Archivo-blackitalic",
-  display: "swap",
-});
 
 
 export const metadata: Metadata = {
@@ -121,12 +59,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body
-        className={`${panchangBold.variable} ${panchangMedium.variable} ${panchangRegular.variable} ${panchangSemiBold.variable} ${archivoBlack.variable} ${archivoBlackItalic.variable} ${archivoItalic.variable} ${archivoMedium.variable} ${archivoRegular.variable} ${archivoSemiBold.variable}  antialiased`}
-      >
-        <Header />
+      <body>
+        {/* <Header /> */}
         <>{children}</>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
