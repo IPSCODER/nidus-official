@@ -1,0 +1,1 @@
+export const BASE_DOMAIN = process.env.NEXT_PUBLIC_BASE_DOMAIN ?? 'https://nidustechnologies.com';

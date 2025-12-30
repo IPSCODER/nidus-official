@@ -1,0 +1,82 @@
+.parent-list {
+  position: relative;
+  padding: 2px 5px;
+  transition: 0.3s linear;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.child-list {
+  display: none;
+  position: absolute;
+  top: 80%;
+  width: max-content;
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 11;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(6, 17, 118, 0.08),
+    0 4px 12px rgba(6, 17, 118, 0.08);
+}
+
+.child-list li {
+  width: 100%;
+  cursor: pointer;
+  height: 40px;
+  align-items: center;
+  display: flex;
+}
+
+.child-list span {
+  padding: 10px 30px;
+}
+
+.child-list li a {
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.parent-list:hover > .child-list {
+  display: block;
+}
+
+.child-list .parent-list:hover {
+  background-color: #111;
+}
+
+.child-list .parent-list:hover > span {
+  color: var(--secondary);
+}
+
+.child-list .parent-list:hover > .child-list {
+  left: 90%;
+  top: 10%;
+  z-index: 11;
+}
+
+@media screen and (max-width: 1024px) {
+  .parent-list {
+    position: relative;
+    padding: 0;
+  }
+  .parent-list li {
+    min-height: 40px;
+    height: fit-content;
+  }
+
+  .parent-list a {
+    padding: 0.2vw 0.2vw;
+    width: 100%;
+    display: flex;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .parent-list span {
+    padding: 0.6vw 0.8vw;
+    display: flex;
+    font-size: 0.8rem;
+  }
+}
