@@ -1,10 +1,14 @@
-import BackgroundGradient from '@/components/common/bg/BackgroundGradient'
 import React from 'react'
+import HeroSection from './home/HeroSection'
+import HeroStatsGrid from './home/WhyUs'
+import FAQAccordion from './home/faq'
 
 const Home = () => {
   return (
     <>
-     <BackgroundGradient/> 
+    <HeroSection/>
+    <HeroStatsGrid/>
+    <FAQAccordion/>
     </>
   )
 }

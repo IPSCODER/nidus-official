@@ -1,0 +1,28 @@
+.eye-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Eye */
+  .eye {
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 4px solid #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Pupil */
+  .pupil {
+    width: 35px;
+    height: 35px;
+    background: #000;
+    border-radius: 50%;
+    transition: transform 0.08s ease-out;
+  }
+  

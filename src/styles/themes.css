@@ -7,6 +7,12 @@
       --foreground: 222 47% 11%;
       --primary: 217 91% 60%;
       --border: 214 32% 91%;
+      --font-oneFont:var(--font-oneFont);
+      --font-twoFont:var(--font-twoFont);
+      --font-threeFont:var(--font-threeFont);
+      --font-fourFont:var(--font-fourFont);
+      --font-fiveFont:var(--font-fiveFont);
+      --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
   
     .dark {
@@ -14,6 +20,13 @@
       --foreground: 210 40% 98%;
       --primary: 217 91% 60%;
       --border: 217 19% 27%;
+      --font-oneFont:var(--font-oneFont);
+      --font-twoFont:var(--font-twoFont);
+      --font-threeFont:var(--font-threeFont);
+      --font-fourFont:var(--font-fourFont);
+      --font-fiveFont:var(--font-fiveFont);
     }
   }
+  
+
   

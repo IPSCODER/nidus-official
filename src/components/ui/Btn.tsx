@@ -26,19 +26,19 @@ export const Btn: React.FC<ButtonProps> = ({
   disabled = false,
 }) => {
   const baseClasses = cn(
-    "relative inline-flex items-center justify-center font-semibold tracking-wide overflow-hidden rounded-md transition-all duration-300 ease-in-out group",
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#ff8c00]",
+    "relative inline-flex items-center justify-center gap-2 font-semibold tracking-wide overflow-hidden rounded-full transition-all duration-300 ease-in-out group",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black",
     {
-      "text-sm px-4 py-1.5": size === "sm",
-      "text-base px-6 py-2": size === "md",
-      "text-lg px-8 py-2.5": size === "lg",
+      "text-sm px-5 py-2": size === "sm",
+      "text-base px-7 py-2.5": size === "md",
+      "text-lg px-9 py-3": size === "lg",
 
-      // 🔸 Brand color palette — orange + black theme
-      "bg-gradient-to-br from-[#ff8c00] to-[#ffb390] text-white shadow-[0_4px_20px_rgba(255,140,0,0.35)] hover:shadow-[0_6px_25px_rgba(255,140,0,0.5)] hover:scale-[1.03]":
-        variant === "primary",
-      "border border-[#ff8c00] text-[#ff8c00] hover:bg-[#ff8c00]/10":
-        variant === "outline",
+      // solid black like screenshot
       "bg-black text-white hover:bg-neutral-900":
+        variant === "primary",
+      "border border-black text-black hover:bg-black hover:text-white":
+        variant === "outline",
+      "bg-neutral-900 text-white hover:bg-black":
         variant === "dark",
 
       "opacity-50 cursor-not-allowed": disabled,
@@ -48,9 +48,26 @@ export const Btn: React.FC<ButtonProps> = ({
 
   const ButtonInner = (
     <>
-      {/* Subtle orange sheen animation */}
-      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent opacity-0 group-hover:opacity-100 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out rounded-md" />
-      <span className="relative z-10">{children}</span>
+      {/* sheen animation kept as‑is */}
+      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out rounded-full" />
+      <span className="relative z-10 flex items-center gap-2">
+        <span>{children}</span>
+        {/* arrow icon */}
+        <span className="inline-flex items-center justify-center">
+          <svg
+            className="w-4 h-4 translate-x-0 group-hover:translate-x-0.5 transition-transform duration-300"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M5 12h14" />
+            <path d="M13 6l6 6-6 6" />
+          </svg>
+        </span>
+      </span>
     </>
   );
 

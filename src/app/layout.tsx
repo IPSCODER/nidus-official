@@ -1,6 +1,40 @@
+import localFont from "next/font/local";
 import type { Metadata } from "next";
 import "../styles/themes.css";
+import './globals.css'
+import BackgroundGradient from "@/components/common/bg/BackgroundGradient";
+import Header from "@/components/common/header/Header";
+import Footer from "@/components/common/footer";
 
+const oneFont = localFont({
+  src: "../assets/fonts/bHYNJqzTyl2lqvmMiRRS6Y16Es.woff2",
+  variable: "--font-oneFont",
+  display: "swap",
+});
+
+const twoFont = localFont({
+  src: "../assets/fonts/iwWTDc49ENF2tCHbqlNARXw6Ug.woff2",
+  variable: "--font-twoFont",
+  display: "swap",
+});
+
+const threeFont = localFont({
+  src: "../assets/fonts/PfdOpgzFf7N2Uye9JX7xRKYTgSc.woff2",
+  variable: "--font-threeFont",
+  display: "swap",
+});
+
+const fourFont = localFont({
+  src: "../assets/fonts/qITWJ2WdG0wrgQPDb8lvnYnTXDg.woff2",
+  variable: "--font-fourFont",
+  display: "swap",
+});
+
+const fiveFont = localFont({
+  src: "../assets/fonts/vQyevYAyHtARFwPqUzQGpnDs.woff2",
+  variable: "--font-fiveFont",
+  display: "swap",
+});
 
 
 export const metadata: Metadata = {
@@ -59,10 +93,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>
-        {/* <Header /> */}
+      <body 
+       className={`${oneFont.variable} ${twoFont.variable} ${threeFont.variable} ${fourFont.variable} ${fiveFont.variable}  antialiased`}
+      >
+<BackgroundGradient/>
+
+        <Header />
         <>{children}</>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

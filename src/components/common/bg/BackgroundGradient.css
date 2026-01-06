@@ -1,5 +1,5 @@
 
-.framer-Z7aAU.framer-1m4s77b{
+.nidus-Z7aAU.nidus-1m4s77b{
     background-color: var(--token-79a6bc92-0037-43aa-add7-96dca20830ea, #dcdcdc);
     flex-flow: column;
     place-content: center flex-start;
@@ -13,7 +13,7 @@
     overflow: visible;
 }
 
-.framer-Z7aAU .framer-10r112l {
+.nidus-Z7aAU .nidus-10r112l {
     background: linear-gradient(225deg, var(--token-cd9f24d5-f0ad-4213-bead-63c4e991dc40, #fff) 0%, var(--token-aa303802-e5d1-4856-bfe5-30475052d91c, #dbdbdb) 100%);
     pointer-events: none;
     z-index: 0;
@@ -30,7 +30,7 @@
     mask: radial-gradient(125% 100% at 0 0, #000 0%, #00000039 88.2883%, #0000 100%);
 }
 
-.framer-Z7aAU .framer-4svcrx{
+.nidus-Z7aAU .nidus-4svcrx{
     background: linear-gradient(#fff 0% 83.9344%, #fff0 100%);
     flex: none;
     width: 591px;
@@ -44,7 +44,7 @@
     mask: linear-gradient(90deg, #0000 0%, #000 20.0362%, #0000 36.175%, #000 55.4054%, #00000021 67.1171%, #000 78.2306%, #0000 97.2973%);
 }
 
-.framer-Z7aAU .framer-cpgx5x {
+.nidus-Z7aAU .nidus-cpgx5x {
     background: linear-gradient(#fff 0% 83.9344%, #fff0 100%);
     flex: none;
     width: 582px;
@@ -59,7 +59,7 @@
 }
 
 
-.framer-Z7aAU .framer-1gogczo {
+.nidus-Z7aAU .nidus-1gogczo {
     background: linear-gradient(#fff 0% 67%, #fff0 100%);
     flex: none;
     width: 441px;
@@ -73,7 +73,7 @@
     mask: linear-gradient(90deg, #0000 9.81489%, #000 20.0362%, #0000008c 28.5878%, #0000006c 40.0901%, #000 48.6487%, #0004 54.5045%, #00000021 78.579%, #000 88.554%, #0000 97.2973%);
 }
 
-.framer-Z7aAU .framer-8fyukk {
+.nidus-Z7aAU .nidus-8fyukk {
     background: linear-gradient(#fff 0% 83.9344%, #fff0 100%);
     flex: none;
     width: 684px;
@@ -87,7 +87,7 @@
     mask: linear-gradient(90deg, #0000 0%, #000 17.6591%, #0000008c 26.6417%, #000 35.2302%, #0000 47.6985%, #00000021 69.1776%, #000 79.1456%, #0000 97.2973%);
 }
 
-.framer-Z7aAU .framer-141vj72 {
+.nidus-Z7aAU .nidus-141vj72 {
     background: linear-gradient(#fff 0% 83.9344%, #fff0 100%);
     flex: none;
     width: 426px;
@@ -100,3 +100,55 @@
     -webkit-mask: linear-gradient(90deg, #0000 0%, #000 20.0362%, #0000008c 27.5778%, #000 42.3423%, #0000 48.6047%, #00000021 67.1171%, #000 74.9525% 82.4324%, #00000078 88.6719%, #0000 97.2973%);
     mask: linear-gradient(90deg, #0000 0%, #000 20.0362%, #0000008c 27.5778%, #000 42.3423%, #0000 48.6047%, #00000021 67.1171%, #000 74.9525% 82.4324%, #00000078 88.6719%, #0000 97.2973%);
 }
+
+/* ===== Base animation ===== */
+@keyframes floatY {
+    0% {
+      transform: skewX(45deg) translateY(0px);
+      opacity: 0.6;
+    }
+    50% {
+      transform: skewX(45deg) translateY(-60px);
+      opacity: 0.85;
+    }
+    100% {
+      transform: skewX(45deg) translateY(0px);
+      opacity: 0.6;
+    }
+  }
+  
+  @keyframes driftX {
+    0% {
+      transform: skewX(45deg) translateX(0px);
+    }
+    50% {
+      transform: skewX(45deg) translateX(100px);
+    }
+    100% {
+      transform: skewX(45deg) translateX(0px);
+    }
+  }
+  
+  /* ===== Apply animation with different timings ===== */
+  .nidus-Z7aAU .nidus-4svcrx {
+    animation: floatY 3s ease-in-out infinite;
+  }
+  
+  .nidus-Z7aAU .nidus-cpgx5x {
+    animation: floatY 3s ease-in-out infinite reverse;
+  }
+  
+  .nidus-Z7aAU .nidus-1gogczo {
+    animation: floatY 3s ease-in-out infinite,
+               driftX 4s ease-in-out infinite;
+  }
+  
+  .nidus-Z7aAU .nidus-8fyukk {
+    animation: floatY 2s ease-in-out infinite reverse;
+  }
+  
+  .nidus-Z7aAU .nidus-141vj72 {
+    animation: floatY 3s ease-in-out infinite,
+               driftX 5s ease-in-out infinite reverse;
+  }
+  

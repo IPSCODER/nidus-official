@@ -11,7 +11,7 @@ const NavMenu: React.FC = () => {
           <NavLists links={MenuItems} child={1} />
         </ul>
       </nav>
-        <Btn href="/contact-us" className="ml-auto lg:!flex !hidden" >
+        <Btn href="/contact-us" className=" lg:!flex !hidden" >
           Lets Talk
         </Btn>
     </>
