@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
     <HeroSection/>
-    <HeroStatsGrid/>
-    <FAQAccordion/>
+    {/* <HeroStatsGrid/>
+    <FAQAccordion/> */}
     </>
   )
 }
