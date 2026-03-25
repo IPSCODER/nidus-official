@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
-import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis'
 
 interface SmoothScrollProps {
   children: ReactNode;
