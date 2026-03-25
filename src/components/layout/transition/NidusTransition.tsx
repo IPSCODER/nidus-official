@@ -15,32 +15,32 @@ const NidusTransition:React.FC<props> = ({children,description}) => {
       <div className="absolute inset-0 overflow-hidden z-0">
          <div className="absolute -top-[5%] right-0 whitespace-nowrap animate-marquee-right opacity-10 pointer-events-none select-none">
           <p className="text-[80px] sm:text-[180px] font-panchangBold font-extrabold uppercase tracking-tight text-stroke leading-none">
-            NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS
+            NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS
           </p>
         </div>
         {/* Leftward scrolling text */}
         <div className="absolute top-[25%] left-0 whitespace-nowrap animate-marquee-left opacity-10 pointer-events-none select-none">
           <p className="text-[80px] sm:text-[180px] font-panchangBold font-extrabold uppercase tracking-tight text-stroke leading-none">
-            NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS
+            NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span>NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS
           </p>
         </div>
 
         {/* Rightward scrolling text */}
         <div className="absolute top-[55%] right-0 whitespace-nowrap animate-marquee-right opacity-10 pointer-events-none select-none">
           <p className="text-[80px] sm:text-[180px] font-panchangBold font-extrabold uppercase tracking-tight text-stroke leading-none">
-            NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS  NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS
+            NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS  NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS
           </p>
         </div>
           <div className="absolute top-[85%] left-0 whitespace-nowrap animate-marquee-left opacity-10 pointer-events-none select-none">
           <p className="text-[80px] sm:text-[180px] font-panchangBold font-extrabold uppercase tracking-tight text-stroke leading-none">
-            NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS
+            NIDUS <span className="text-stroke-orange" >NIDUS</span>NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS <span className="text-stroke-orange" >NIDUS</span> NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS NIDUS
           </p>
         </div>
       </div>
       <div className="w-full mx-auto max-w-7xl md:max-w-4xl h-full flex md:items-center justify-center flex-col gap-0 md:gap-2" >
         <AnimatedText>
        <h2 className="text-4xl md:text-7xl font-extrabold capitalize font-Archivo-semibold md:text-center md:mb-4">
-            {children}
+            {children}<span className="text-orange-500">.</span>
           </h2>
         </AnimatedText>
         <AnimatedText>

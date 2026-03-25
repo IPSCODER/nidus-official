@@ -30,7 +30,7 @@ const NavLists: React.FC<{ links: LinkItem[]; child: number }> = ({
             {item.href ? (
               <Link
                 href={item.href}
-                className={` hover:text-primary capitalize font-kappa font-light ${
+                className={` hover:text-primary capitalize font-kappa font-bold text-shadow ${
                   item.href === pathName ? "text-primary" : "text-black"
                 }`}
               >
@@ -38,7 +38,7 @@ const NavLists: React.FC<{ links: LinkItem[]; child: number }> = ({
               </Link>
             ) : (
               <span
-                className={`hover:text-primary capitalize h-full font-kappa font-normal cursor-pointer flex  items-center  ${
+                className={`hover:text-primary capitalize h-full font-kappa font-bold text-shadow cursor-pointer flex  items-center  ${
                   pathName?.split("/")[child]?.split("-")[0] ===
                   item?.title?.split(" ")[0]?.toLowerCase()
                     ? "text-primary"

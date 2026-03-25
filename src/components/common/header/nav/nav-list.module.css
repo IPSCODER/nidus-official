@@ -12,14 +12,17 @@
   position: absolute;
   top: 80%;
   width: max-content;
-  background-color: #fff;
-  backdrop-filter: blur(10px);
   border-radius: 5px;
   padding: 15px;
   z-index: 11;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(6, 17, 118, 0.08),
-    0 4px 12px rgba(6, 17, 118, 0.08);
+  
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.93);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(38.7px);
+-webkit-backdrop-filter: blur(8.7px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .child-list li {
@@ -45,6 +48,10 @@
 
 .child-list .parent-list:hover {
   background-color: #111;
+}
+
+.child-list .parent-list:hover > a {
+  color: #fff !important;
 }
 
 .child-list .parent-list:hover > span {

@@ -1,16 +1,24 @@
+"use client";
 
-'use client'
-
-import React, { ElementType, useEffect } from "react";
+import React from "react";
 import AnimatedText from "@/components/layout/animation/AnimatedText";
+import {
+  ActivitySquare,
+  Code,
+  LineChart,
+  Cloud,
+  Shield,
+  Monitor,
+} from "lucide-react";
+
+
 
 interface FeaturePoint {
   id: number;
-  icon: ElementType;
   title: string;
   subtitle?: string;
   description: string;
-  iconClass?:string
+  iconClass?: string;
 }
 
 interface FeatureGridProps {
@@ -19,46 +27,57 @@ interface FeatureGridProps {
   points: FeaturePoint[];
 }
 
-const FeatureGrid: React.FC<FeatureGridProps> = ({ sectionTitle, highlight, points }) => {
-
-      useEffect(() => {
-    fetch('/api/v1')
-      .then(res => res.json())
-      .then(json => console.log(json,'json'));
-  }, []);
-
+const FeatureGrid: React.FC<FeatureGridProps> = ({
+  sectionTitle,
+  highlight,
+  points,
+}) => {
   return (
-    <section className="w-full py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="text-4xl md:text-4xl drop-shadow-md font-extrabold mb-12">
-          {sectionTitle}{" "}
-          <span className="text-primary">{highlight}</span>
+    <section className="mx-auto px-10 py-20">
+      
+      {/* heading */}
+      <div className="flex justify-between items-end mb-12">
+        <h2 className="text-5xl md:text-7xl font-bold text-black">
+          {sectionTitle} <span className="text-gray-400">{highlight}</span>
         </h2>
+        <span className="text-gray-500 hidden md:block">
+          [{String(points.length).padStart(2, "0")}]
+        </span>
+      </div>
 
-        <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
-          {points.map((item) => {
-              const Icon = item.icon;
-            return  <div key={item.id} className="flex gap-5 md:flex-row flex-col">
-              {/* Icon */}
-              <div className="flex-shrink-0 mt-1"><Icon className={item.iconClass} /></div>
+      <div className="border-t border-gray-200">
+        {points.map((item, index) => {
 
-              {/* Text */}
-              <div>
+          return (
+            <div
+              key={item.id}
+              className="flex md:items-center gap-8 py-10 border-b border-gray-200 group  transition-all"
+            >
+              
+              {/* number */}
+              <span className="text-2xl text-gray-500 w-16">
+                [{String(index + 1).padStart(2, "0")}]
+              </span>
+
+         
+
+              {/* content */}
+              <div className="max-w-3xl">
                 <AnimatedText>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">
+                  <h3 className="text-2xl font-semibold text-black">
                     {item.title}
                   </h3>
                 </AnimatedText>
 
                 <AnimatedText>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-600 mt-2 leading-relaxed">
                     {item.description}
                   </p>
                 </AnimatedText>
               </div>
             </div>
-          })}
-        </div>
+          );
+        })}
       </div>
     </section>
   );

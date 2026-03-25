@@ -34,47 +34,10 @@ export const MenuItems = [
 
     },
      {
-      'title':'Industries',
-      'subLinks':[
-        {
-      "title": "Industries",
-      "href": "/industries"
+      "title": "Contact",
+      "href": "/contact-us"
     },
-        {
-      "title": "transportation and logistics",
-      "href": "/industries/transportation-and-logistics"
-    },
-    {
-      "title": "education",
-      "href": "/industries/education"
-    },
-    {
-      "title": "manufacturing",
-      "href": "/industries/manufacturing"
-    },
-    {
-      "title": "retail and ecommerce",
-      "href": "/industries/retail-and-e-commerce"
-    },
-    {
-      "title": "healthcare",
-      "href": "/industries/healthcare"
-    },
-    {
-      "title": "finance and banking",
-      "href": "/industries/finance-and-banking"
-    },
-    {
-      "title": "energy and utilities",
-      "href": "/industries/energy-and-utilities"
-    },
-    {
-      "title": "government and public sector",
-      "href": "/industries/government-and-public-sector"
-    },
-      ]
-
-    },
+  
    
   ]
   
