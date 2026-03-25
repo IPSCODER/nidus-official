@@ -64,7 +64,7 @@ const Footer = () => {
         <h2 className="text-2xl font-semibold">nidustechnologies</h2>
 
         <p className="text-gray-400 text-sm mt-4 md:mt-0">
-          © 2024 Inuvik Hub All Right Reserved
+          © 2024 Nidus Technologies All Right Reserved
         </p>
       </div>
     </footer>

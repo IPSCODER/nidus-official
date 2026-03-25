@@ -9,7 +9,7 @@ const Header = () => {
     <header
       className={`fixed top-6 left-1/2 -translate-x-1/2 max-w-7xl w-full z-50  mx-auto `}
     >
-<div className=" rounded-md w-full bg-accent/90 h-16 backdrop-blur-lg bg-white/10 flex items-center justify-start lg:justify-between px-4 transition-all duration-300 z-50 mx-auto" >
+<div className=" rounded-md w-full px-4 bg-accent/90 h-16 backdrop-blur-lg bg-white/10 flex items-center justify-start lg:justify-between px-4 transition-all duration-300 z-50 mx-auto" >
 <Link href="/" className="relative z-50">
         <Image src='/nidus-black.png' width={100} height={100} className="w-28" alt="Logo" priority />
       </Link>
