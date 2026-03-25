@@ -20,7 +20,7 @@ const toggleTheme = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-lg border border-border bg-background px-3 py-2 text-sm hover:bg-muted transition"
+      className="rounded-lg  bg-background px-3 py-2 text-sm hover:bg-muted transition"
     >
       Toggle Theme
     </button>

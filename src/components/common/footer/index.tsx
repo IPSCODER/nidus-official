@@ -1,57 +1,74 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className='border-t border-gray-500 my-10 px-10'>
-      <div className='flex justify-between py-5 items-center border-b' >
-        <h1 className='text-8xl font-bold font-primary tracking-tight text-shadow-sm text-[#000000] ' >Work with us</h1>
-        <a href="mailto:contact@nidustechnologies.com" className='text-6xl  font-primary font-bold tracking-tight text-shadow-sm text-[#000000] ' >contact@nidustechnologies.com</a>
-      </div>
-      <div className='flex gap-4 my-5' >
-        <ul>
-          <li>
-            <h5 className='mb-3 font-bold' >
-              Sitemap
-            </h5>
-          </li>
-          <li>
-            <Link href={'/'} >Home</Link>
-          </li>
-          <li>
-            <Link href={'/about'} >About</Link>
-          </li>
-          <li>
-            <Link href={'/services'} >Services</Link>
-          </li>
-          <li>
-            <Link href={'/contact'} >Contact</Link>
-          </li>
-        </ul>
+    <footer className="bg-black text-white px-10 py-16">
+      {/* Top Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 border-b border-gray-800 pb-10">
+        
+        {/* Left */}
+        <div>
+          <p className="text-gray-400 mb-4">Let’s Talk</p>
 
-        <ul>
-          <li>
-            <h5 className='mb-3' >
-              Social
-            </h5>
-          </li>
-          <li>
-            <Link href={'/'} >Instagram</Link>
-          </li>
-          <li>
-            <Link href={'/about'} >Linkdln</Link>
-          </li>
-          <li>
-            <Link href={'/services'} >Behance</Link>
-          </li>
-        </ul>
+          <a
+            href="mailto:hello@nidustechnologies.com"
+            className="text-4xl md:text-5xl font-semibold tracking-tight"
+          >
+            hello@nidustechnologies.com
+          </a>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10 text-sm">
+            <div>
+              <p className="text-gray-400 mb-2">Job Application</p>
+              <p>apply@nidustechnologies.com</p>
+            </div>
+
+            <div>
+              <p className="text-gray-400 mb-2">Office Address</p>
+              <p>
+                2464 Royal Ln. Mesa,
+                <br />
+                New Jersey 45463
+              </p>
+            </div>
+
+            <div>
+              <p className="text-gray-400 mb-2">Phone Number</p>
+              <p>342-000-0000</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Social */}
+        <div className="flex lg:justify-end">
+          <ul className="space-y-4 text-gray-300">
+            <li>
+              <Link href="#">Twitter ↗</Link>
+            </li>
+            <li>
+              <Link href="#">LinkedIn ↗</Link>
+            </li>
+            <li>
+              <Link href="#">Instagram ↗</Link>
+            </li>
+            <li>
+              <Link href="#">Facebook ↗</Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-         <Image src='/nidus-black.png' width={5000} height={5000} className="w-[40vw]" alt="Logo" priority />
+
+      {/* Bottom */}
+      <div className="flex flex-col md:flex-row justify-between items-center pt-6">
+        <h2 className="text-2xl font-semibold">nidustechnologies</h2>
+
+        <p className="text-gray-400 text-sm mt-4 md:mt-0">
+          © 2024 Inuvik Hub All Right Reserved
+        </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
