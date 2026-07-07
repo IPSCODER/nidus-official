@@ -100,9 +100,9 @@ export default function RootLayout({
       >
 <BackgroundGradient/>
 
-        <Header />
+        {/* <Header /> */}
         <>{children}</>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
