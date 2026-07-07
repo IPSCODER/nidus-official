@@ -38,32 +38,34 @@ const fiveFont = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Nidus Technologies",
+  title: "Pravin Sawant | Full Stack Developer",
   description:
     "We empower businesses with innovative technology solutions to thrive in the digital age. Our passion for technology, paired with a commitment to excellence, helps deliver tailored solutions that drive success.",
   keywords: [
-    "Nidus Technologies",
+    "Pravin Sawant",
+    "Full Stack Developer",
+    "Software Engineer",
     "IT Services",
     "Software Development",
     "Web Development",
     "Digital Transformation",
     "AI Solutions",
   ],
-  authors: [{ name: "Nidus Technologies", url: "https://nidustech.in" }],
+  authors: [{ name: "Pravin Sawant", url: "https://pravinsawant.in" }],
   creator: "Nidus Technologies",
-  metadataBase: new URL("https://nidustech.in"),
+  metadataBase: new URL("https://pravinsawant.in"),
   openGraph: {
-    title: "Nidus Technologies",
+    title: "Pravin Sawant | Full Stack Developer",
     description:
       "Innovative IT solutions to power your business in the digital era.",
-    url: "https://nidustech.in",
-    siteName: "Nidus Technologies",
+    url: "https://pravinsawant.in",
+    siteName: "Pravin Sawant",
     images: [
       {
-        url: "https://nidustech.in/og-image.jpg", // Replace with your OG image URL
+        url: "https://pravinsawant.com/og-image.jpg", // Replace with your OG image URL
         width: 1200,
         height: 630,
-        alt: "Nidus Technologies - Empowering Digital Growth",
+        alt: "Pravin Sawant | Full Stack Developer",
       },
     ],
     locale: "en_US",
@@ -71,10 +73,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nidus Technologies",
+    title: "Pravin Sawant | Full Stack Developer",
     description:
       "Empowering businesses with next-gen IT services and solutions.",
-    images: ["https://nidustech.in/og-image.jpg"], // Same image as OG
+    // images: ["https://nidustech.in/og-image.jpg"], // Same image as OG
     creator: "@nidustech", // Optional Twitter handle
   },
   icons: {

@@ -6,12 +6,13 @@ import Services from "@/components/Services";
 export default function HomePage() {
   return (
 <>
-<HeroSection/>
+<h1>Pravin Sawant</h1>
+{/* <HeroSection/>
 <OurStory/>
   <Services/>
      <NidusTransition>
 Get answers to your questions
-    </NidusTransition>
+    </NidusTransition> */}
 </>
   );
 }
